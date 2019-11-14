@@ -1,24 +1,46 @@
-# Composer files
-composer.phar
-vendor/
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Local configs
-config/autoload/*.local.php
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
 
-# Binary gettext files
-*.mo
+# dependencies
+/node_modules
 
-# Data
-data/logs/
-data/cache/
-data/sessions/
-data/tmp/
-temp/
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
 
-#Doctrine 2
-data/DoctrineORMModule/Proxy/
-data/DoctrineORMModule/cache/
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# Legacy ZF1
-demos/
-extras/documentation
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
