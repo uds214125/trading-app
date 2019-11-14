@@ -1,4 +1,17 @@
-<p>datewise works!</p>
+<p><button (click)="onBack()" class="btn btn-info">Back</button></p>
 <div style="width: 100%">
     <canvas height="100%"  #barChart></canvas> 
 </div>
+<div>
+    <select name="limit" (click)="getMax($event)">
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="1">All</option>
+    </select>
+    <select name="stacked" (click)="isStacked($event)">
+        <option value="1">Default</option>
+        <option value="2">Stacked</option>
+    </select>
+</div>
+<app-footer></app-footer>
